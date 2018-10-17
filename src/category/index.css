@@ -1,0 +1,149 @@
+ul,.ul1{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.ul1 li{
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 50%;
+}
+.ul1 li:nth-child(2){
+    margin: 0 5px;
+}
+
+li.jingdian {
+    background-image: url("./image/fengjing.png");
+    background-size: 100% auto;
+}
+li.ktv {
+    background:url("./image/ktv.png");
+    background-size:100% auto;
+}
+li.gouwu {
+    background:url("./image/shop.png");
+    background-size:100% auto;
+}
+li.shenghuofuwu {
+    background:url("./image/life.png");
+    background-size:100% auto;
+}
+li.jianshenyundong {
+    background:url("./image/sport.png");
+    background-size:100% auto;
+}
+li.meifa {
+    background:url("./image/meifa.png");
+    background-size:100% auto;
+}
+li.qinzi {
+    background:url("./image/qinzi.png");
+    background-size:100% auto;
+}
+li.xiaochikuaican {
+    background:url("./image/xiaochi.png");
+    background-size:100% auto;
+}
+li.zizhucan {
+    background:url("./image/zizucan.png");
+    background-size:100% auto;
+}
+li.jiuba {
+    background:url("./image/jiuba.png");
+    background-size:100% auto;
+}
+li.meishi {
+    background:url("./image/meishi.png");
+    background-size:100% auto;
+}
+li.dianying {
+    background:url("./image/dianying.png");
+    background-size:100% auto;
+}
+li.jiudian {
+    background:url("./image/jiudian.png");
+    background-size:100% auto;
+}
+li.xuixianyule {
+    background:url("./image/xuxianyule.png");
+    background-size:100% auto;
+}
+li.waimai {
+    background:url("./image/waimai.png");
+    background-size:100% auto;
+}
+li.huoguo {
+    background:url("./image/huoguo.png");
+    background-size:100% auto;
+}
+li.liren {
+    background:url("./image/fengjing.png");
+    background-size:100% auto;
+}
+li.dujiachuxing {
+    background:url("./image/liren.png");
+    background-size:100% auto;
+}
+li.zuliaoanmo {
+    background:url("./image/zuliao.png");
+    background-size:100% auto;
+}
+li.zhoubianyou {
+    background:url("./image/zhoubian.png");
+    background-size:100% auto;
+}
+li.ribencai {
+    background:url("./image/riben.png");
+    background-size:100% auto;
+}
+li.SPA {
+    background:url("./image/spa.png");
+    background-size:100% auto;
+}
+li.jiehun {
+    background:url("./image/jiehun.png");
+    background-size:100% auto;
+}
+li.xuexipeixun {
+    background:url("./image/xuexi.png");
+    background-size:100% auto;
+}
+li.xican {
+    background:url("./image/xican.png");
+    background-size:100% auto;
+}
+li.huochejipiao {
+    background:url("./image/huoche.png");
+    background-size:100% auto;
+}
+li.shaokao {
+    background:url("./image/shaokao.png");
+    background-size:100% auto;
+}
+li.jiazhuang {
+    background:url("./image/jiazhuang.png");
+    background-size:100% auto;
+}
+li.chongwu {
+    background:url("./image/chongwu.png");
+    background-size:100% auto;
+}
+li.quanbufenlei {
+    background:url("./image/quanbu.png");
+    background-size:100% auto;
+}
+.clear-fix li{
+    width: 20%;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    float:left;
+    background-repeat: no-repeat;
+    background-size: 50px auto;
+    background-position: top center;
+    color: #666;
+}

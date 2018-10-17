@@ -1,26 +1,29 @@
 import React from 'react'
 import ReactSwipe from 'react-swipe'
-import './index.css'
-export default class Category extends React.Component {
-    constructor() {
-        super();
+
+import './style.less'
+
+class Category extends React.Component {
+    constructor(props, context) {
+        super(props, context);
         this.state = {
             index: 0
         }
     }
     render() {
-        let opt = {
-            auto: 2000,
+        const opt = {
+            auto: 2500,
             callback: function (index) {
-                this.setState({ index });
+                // 更新当前轮播图的index
+                this.setState({index: index});
             }.bind(this)
         }
-        let index = this.state.index;
+
         return (
             <div>
-                <ReactSwipe className='carousel' swipeOptions={opt}>
+                <ReactSwipe swipeOptions={opt}>
                     <div>
-                        <ul className="clear-fix">
+                        <ul>
                             <li className="jingdian">景点</li>
                             <li className="ktv">KTV</li>
                             <li className="gouwu">购物</li>
@@ -49,26 +52,29 @@ export default class Category extends React.Component {
                     </div>
                     <div>
                         <ul className="clear-fix">
-                            <li className="ribencai">日本菜</li>
-                            <li className="SPA">SPA</li>
-                            <li className="jiehun">结婚</li>
-                            <li className="xuexipeixun">学习培训</li>
-                            <li className="xican">西餐</li>
-                            <li className="huochejipiao">火车机票</li>
-                            <li className="shaokao">烧烤</li>
-                            <li className="jiazhuang">家装</li>
-                            <li className="chongwu">宠物</li>
-                            <li className="quanbufenlei">全部分类</li>
+                            <li className="float-left ribencai">日本菜</li>
+                            <li className="float-left SPA">SPA</li>
+                            <li className="float-left jiehun">结婚</li>
+                            <li className="float-left xuexipeixun">学习培训</li>
+                            <li className="float-left xican">西餐</li>
+                            <li className="float-left huochejipiao">火车机票</li>
+                            <li className="float-left shaokao">烧烤</li>
+                            <li className="float-left jiazhuang">家装</li>
+                            <li className="float-left chongwu">宠物</li>
+                            <li className="float-left quanbufenlei">全部分类</li>
                         </ul>
                     </div>
                 </ReactSwipe>
-                <ul className='ul1'>
-                    <li style={{ background: index == 0 ? "rgb(233, 32, 61)" : "#ccc" }}></li>
-                    <li style={{ background: index == 1 ? "rgb(233, 32, 61)" : "#ccc" }}></li>
-                    <li style={{ background: index == 2 ? "rgb(233, 32, 61)" : "#ccc" }}></li>
-                </ul>
+                <div className="index-container">
+                    <ul>
+                        <li className={this.state.index === 0 ? "selected" : ''}></li>
+                        <li className={this.state.index === 1 ? "selected" : ''}></li>
+                        <li className={this.state.index === 2 ? "selected" : ''}></li>
+                    </ul>
+                </div>
             </div>
-
         )
     }
 }
+
+export default Category
