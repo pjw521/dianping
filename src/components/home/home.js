@@ -4,7 +4,7 @@ export default class Home extends React.Component{
     render(){
         return(
             <div>
-                <Header></Header>
+                <Header cityName="武汉"></Header>
             </div>
         )
     }

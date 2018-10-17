@@ -5,8 +5,8 @@ class Header extends React.Component{
     render(){
         return(
             <div className="box">
-                <span>深圳<i className="iconfont icon-xiangxia"></i></span>
-                <span><i className="iconfont icon-sousuo" ></i><input type="text"/></span> 
+                <span>{this.props.cityName}<i className="iconfont icon-xiangxia"></i></span>
+                <span className="searchwarp"><i className="iconfont icon-sousuo" ></i><input type="text" placeholder="请输入关键字"/></span> 
                 <span><i className="iconfont icon-yonghu"></i></span>
             </div>
         )
