@@ -1,11 +1,29 @@
 import React from "react"
 import Header from "./header"
-export default class Home extends React.Component{
+import {connect} from "react-redux"
+import Category from "../../category";
+
+class Home extends React.Component{
     render(){
         return(
             <div>
-                <Header cityName="武汉"></Header>
+                <Header cityName={this.props.userinfo.cityName}></Header>
+                <Category></Category>
             </div>
         )
     }
 }
+function mapStateToProps(state){
+    return{
+        userinfo:state.userinfo
+    }
+}
+function mapDispatchToProps(dispatch){
+    return{
+
+    }
+}
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Home)

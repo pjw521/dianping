@@ -12,6 +12,7 @@
     border-radius: 10px;
     background: #fff;
     overflow: hidden;
+    font-size: 10px;
 }
 .searchwarp i{
     margin-left: 5px;
@@ -20,6 +21,5 @@
 .searchwarp input{
     border:none;
     outline: none;
-    font-size: 14px;
     color:#ccc;
 }
